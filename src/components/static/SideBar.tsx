@@ -2,7 +2,7 @@ import { useState } from "react"
 import { FaDoorOpen, FaDoorClosed, FaConnectdevelop, FaGraduationCap } from "react-icons/fa"
 import { BsFillPersonFill, BsFillGearFill } from "react-icons/bs"
 import { BiSolidChart, BiSolidInbox } from "react-icons/bi"
-import { onToggle } from "../../global/globalState"
+import { onToggle, onToggleLeft } from "../../global/globalState"
 import { useDispatch, useSelector } from "react-redux"
 import { MdGroups2 } from "react-icons/md"
 import { GoCommentDiscussion } from "react-icons/go"
@@ -13,6 +13,11 @@ const SideBar = () => {
 
     return (
         <div
+            onClick={() => {
+                dispatch(onToggleLeft(true))
+                console.log("hmmm")
+            }} >
+            <div
             className={`w-[${toggle ? "200px" : "70px"}] h-[100vh] fixed flex flex-col  bg-white z-10 duration-300 transition-all medium:hidden `}
 
             style={{
@@ -129,6 +134,7 @@ const SideBar = () => {
 
             </div>
 
+            </div>
         </div>
     )
 }

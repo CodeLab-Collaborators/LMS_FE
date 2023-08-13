@@ -5,7 +5,7 @@ import { BsFacebook } from "react-icons/bs"
 const MainProfileScreen = () => {
     return (
         <div >
-            <div className='w-full bg-white rounded-md h-[480px] overflow-hidden relative medium:ml-[5px] small:text-[12px] medium:w-full small:w-[95%] ' >
+            <div className='w-full bg-white rounded-md h-[480px] overflow-hidden relative medium:ml-[5px] small:text-[12px] medium:w-full small:w-[100%] ' >
                 <img src={img}
                     className="w-full h-[250px] object-cover "
                 />
@@ -42,7 +42,7 @@ const MainProfileScreen = () => {
 
             {/* <div className="h-[130vh] text-[20px] ">Content</div> */}
 
-            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[95%] ml-[5px]  ' >
+            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  ' >
 
 
                 <div className="flex items-center justify-between mb-6 " >
@@ -98,7 +98,7 @@ const MainProfileScreen = () => {
 
             </div>
 
-            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[95%] ml-[5px]  ' >
+            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  ' >
                 <div className="flex items-center justify-between mb-6 " >
                     <div className="text-[20px] l " >Work Experience</div>
                     <button className="bg-[#dfdfdf] py-2 px-6 rounded hover:cursor-pointer hover:scale-[1.05] duration-300 transition-all border-2 border-purple-900 " >Edit</button>
@@ -115,7 +115,7 @@ const MainProfileScreen = () => {
                 </div>
             </div>
 
-            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[95%] ml-[5px]  ' >
+            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  ' >
                 <div className="flex items-center justify-between mb-6 " >
                     <div className="text-[20px] l " >Biography</div>
                     <button className="bg-[#dfdfdf] py-2 px-6 rounded hover:cursor-pointer hover:scale-[1.05] duration-300 transition-all border-2 border-purple-900 " >Edit</button>

@@ -2,21 +2,32 @@ import { AiOutlineBell, AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import logo from "../../assets/logo.png"
 import img from "../../assets/pi.jpg"
 import { useDispatch, useSelector } from "react-redux"
-import { onToggle } from "../../global/globalState"
-import { useState } from "react"
+import { onToggle, onToggleLeft } from "../../global/globalState"
+import { useEffect, useState } from "react"
 import DropDownProfile from "./DropDownProfile"
+import LeftDropSider from "./LeftDropSider"
 
 const Header = () => {
 
 
+    const toggleLeft = useSelector((state: any) => state.toggleLeft)
     const toggle = useSelector((state: any) => state.toggle)
     const dispatch = useDispatch()
+
     const [state, setState] = useState<boolean>(false)
+    const [stateLeft, setStateLeft] = useState<boolean>(false)
 
     const onState = () => {
         setState(!state)
     }
 
+    const onStateLeft = () => {
+        setStateLeft(!stateLeft)
+    }
+
+
+
+    console.log("reading Best: ", toggleLeft)
     return (
 
         <div className={` w-[${toggle ? "calc(100vw-200px)" : "calc(100vw-70px)"}] flex justify-center fixed  bg-white items-center h-[70px] duration-300 transition-all 
@@ -28,17 +39,19 @@ const Header = () => {
         >
             <div className="w-[95%] flex justify-between items-center" >
                 {
-                    toggle ? <div className="hidden medium:flex w-[40px] h-[40px] rounded-md hover:bg-slate-200 justify-center items-center hover:cursor-pointer duration-300 transition-all  "
+                    !toggleLeft ? <div className="hidden medium:flex w-[40px] h-[40px] rounded-md hover:bg-slate-200 justify-center items-center hover:cursor-pointer duration-300 transition-all  "
                         onClick={() => {
-                            dispatch(onToggle(false))
+                            dispatch(onToggleLeft(!toggleLeft))
+
                         }}
                     >
                         <AiOutlineClose className="text-[25px] " />
                     </div> : <div className="hidden medium:flex w-[40px] h-[40px] rounded-md hover:bg-slate-200 justify-center items-center hover:cursor-pointer duration-300 transition-all  "
                         onClick={() => {
-                            dispatch(onToggle(true))
+                            dispatch(onToggleLeft(!toggleLeft))
+
                         }}
-                    >
+                        >
                         <AiOutlineMenu className="text-[25px] " />
                     </div>
                 }
@@ -88,6 +101,25 @@ const Header = () => {
                             }}
                         >
                             <DropDownProfile state={state} setState={setState} />
+                        </div>
+                    }
+                    {
+                        !toggleLeft ? <div className={`
+                        absolute top-16 rounded transition-all duration-500 left-2 
+                        `}
+                            style={{
+                                boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                            }}
+                        >
+                            <LeftDropSider />
+                        </div> : <div className={`
+                        absolute top-16 rounded transition-all duration-500 left-[-100%]
+                        `}
+                            style={{
+                                boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                            }}
+                        >
+                            <LeftDropSider />
                         </div>
                     }
                 </div>

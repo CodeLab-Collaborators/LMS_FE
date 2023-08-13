@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     dailyState: "" || null,
-    toggle: false
+    toggle: false,
+    toggleLeft: false
 }
 
 const globalState = createSlice({
@@ -20,9 +21,13 @@ const globalState = createSlice({
         onToggle: (state, { payload }) => {
             state.toggle = payload
         },
+
+        onToggleLeft: (state, { payload }) => {
+            state.toggleLeft = payload
+        },
     }
 });
 
-export const { logOut, user, onToggle } = globalState.actions
+export const { logOut, user, onToggle, onToggleLeft } = globalState.actions
 
 export default globalState.reducer
