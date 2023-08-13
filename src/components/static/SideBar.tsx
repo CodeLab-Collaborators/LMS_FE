@@ -18,7 +18,7 @@ const SideBar = () => {
                 console.log("hmmm")
             }} >
             <div
-            className={`w-[${toggle ? "200px" : "70px"}] h-[100vh] fixed flex flex-col  bg-white z-10 duration-300 transition-all medium:hidden `}
+                className={`w-[${toggle ? "200px" : "70px"}] h-[100vh] fixed flex flex-col  bg-white z-40 duration-300 transition-all medium:hidden `}
 
             style={{
                 boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"

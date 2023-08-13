@@ -2,9 +2,30 @@ import React from 'react'
 
 const SidedScreen = () => {
     return (
-        <div className='w-full h-[70vh] bg-fuchsia-300 rounded-md  relative ' >
-            <div className=' absolute w-[90%] h-[60vh] bg-fuchsia-800 mr-[100px] ' >
-                <div className='w-[300px] h-[40vh] bg-white round-md fixed'>start</div>
+        <div className='w-full ' >
+            <div className='w-[22%] min-h-[40vh] fixed rounded p-4 '>
+                <div className='w-full items-center flex flex-col  bg-white rounded-md py-4 '
+
+                    style={{ boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" }}
+                >
+
+                    <div>Complete Your Profile</div>
+                    <div className='w-[150px] h-[150px] rounded-[50%] border-8 border-green-500 flex items-center justify-center mt-4  ' >
+                        <div>75% done</div>
+                    </div>
+
+                </div>
+                <div className='w-full items-center flex flex-col  bg-white rounded-md py-4 mt-4 '
+
+                    style={{ boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" }}
+                >
+
+                    <div>Complete Your Profile</div>
+                    <div className='w-[150px] h-[150px] rounded-[50%] border-8 border-green-500 flex items-center justify-center mt-4  ' >
+                        <div>75% done</div>
+                    </div>
+
+                </div>
             </div>
         </div>
     )
