@@ -2,13 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: athletics;
+  src: url(../public/font/Athletics\ Regular.otf)
+}
+
+.athletics {
+  font-family: athletics;
+}
+
+@font-face {
+  font-family: athleticsMedium;
+  src: url(../public/font/Athletics\ Medium.otf)
+}
+
+.athleticsMedium {
+  font-family: athleticsMedium;
+}
+
+@font-face {
+  font-family: athleticsBold;
+  src: url(../public/font/Athletics\ Bold.otf)
+}
+
+.athleticsBold {
+  font-family: athleticsBold;
+}
+
+@font-face {
+  font-family: athleticsLight;
+  src: url(../public/font/Athletics\ Light.otf)
+}
+
+.athleticsLight {
+  font-family: athleticsLight;
+}
 :root {
-  font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: athletics, Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #F6EFE8;
   color: #242424;
 
   font-synthesis: none;

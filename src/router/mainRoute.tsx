@@ -8,6 +8,8 @@ import Layout from "../components/common/Layout"
 import TestScreen from "../pages/screen/test/TestScreen"
 import TestScreen2 from "../pages/screen/test/TestScreen2"
 import ErrorImport from "../error/error/ErrorImport"
+import ResponseScreen from "../pages/auth/ResponseScreen"
+import ProfileScreen from "../pages/screen/profile/ProfileScreen"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -33,19 +35,20 @@ export const mainRoute = createBrowserRouter([
                 path: "test",
                 element: <TestScreen />
             },
+
             {
                 index: true,
-                path: "error",
-                element: <ErrorImport />
+                path: "profile",
+                element: <ProfileScreen />
             },
-            {
-                index: true,
-                path: "test2",
-                element: <TestScreen2 />
-            }
+
         ]
 
 
+    },
+    {
+        path: "/response",
+        element: <ResponseScreen />
     },
     {
         path: "*",

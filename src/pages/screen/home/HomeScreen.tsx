@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeScreen = () => {
     return (
-        <div className='h-[150vh]' >HomeScreen</div>
+        <div className='h-[150vh] mt-[100px]' >HomeScreen</div>
     )
 }
 
