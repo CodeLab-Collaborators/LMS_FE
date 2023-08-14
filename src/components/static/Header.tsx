@@ -27,7 +27,7 @@ const Header = () => {
     console.log("readign: ", toggle)
     return (
 
-        <div className={` w-[${toggle ? "calc(100vw-200px)" : "calc(100vw-80px)"}] flex justify-center fixed  bg-white items-center h-[70px] duration-300 transition-all 
+        <div className={` w-[${toggle ? "calc(100vw-200px)" : "calc(100vw-80px)" }] flex justify-center fixed  bg-white items-center h-[70px] duration-300 transition-all 
         medium:w-[100vw] z-20
         `}
             style={{

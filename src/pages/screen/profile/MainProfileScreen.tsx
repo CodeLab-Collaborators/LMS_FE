@@ -5,14 +5,18 @@ import { BsFacebook } from "react-icons/bs"
 const MainProfileScreen = () => {
     return (
         <div >
-            <div className='w-full bg-white rounded-md h-[480px] overflow-hidden relative medium:ml-[5px] small:text-[12px] medium:w-full small:w-[100%] ' >
+            <div className='w-full bg-white rounded-md h-[480px] overflow-hidden relative medium:ml-[5px] small:text-[12px] medium:w-full small:w-[100%] '
+
+                style={{
+                    boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                }}>
                 <img src={img}
                     className="w-full h-[250px] object-cover "
                 />
 
                 <div className="mt-[-150px] z-10 absolute  flex flex-col items-center w-full  " >
                     <img
-                        className="w-[200px] h-[200px] rounded-[50%] border-4 border-purple-300 object-cover "
+                        className="w-[200px] h-[200px] rounded-[50%] border-4 border-white object-cover "
 
                         src={img}
                     />
@@ -42,7 +46,11 @@ const MainProfileScreen = () => {
 
             {/* <div className="h-[130vh] text-[20px] ">Content</div> */}
 
-            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  ' >
+            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  '
+                style={{
+                    boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                }}
+            >
 
 
                 <div className="flex items-center justify-between mb-6 " >
@@ -98,7 +106,11 @@ const MainProfileScreen = () => {
 
             </div>
 
-            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  ' >
+            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  '
+                style={{
+                    boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                }}
+            >
                 <div className="flex items-center justify-between mb-6 " >
                     <div className="text-[20px] l " >Work Experience</div>
                     <button className="bg-[#dfdfdf] py-2 px-6 rounded hover:cursor-pointer hover:scale-[1.05] duration-300 transition-all border-2 border-purple-900 " >Edit</button>
@@ -115,7 +127,11 @@ const MainProfileScreen = () => {
                 </div>
             </div>
 
-            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  ' >
+            <div className='w-full bg-white rounded-md h-250px] overflow-hidden mt-4 p-10 mb-4  small:w-[100%] ml-[5px]  '
+                style={{
+                    boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                }}
+            >
                 <div className="flex items-center justify-between mb-6 " >
                     <div className="text-[20px] l " >Biography</div>
                     <button className="bg-[#dfdfdf] py-2 px-6 rounded hover:cursor-pointer hover:scale-[1.05] duration-300 transition-all border-2 border-purple-900 " >Edit</button>
