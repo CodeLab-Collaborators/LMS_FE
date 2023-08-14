@@ -5,6 +5,8 @@ import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { useForm } from "react-hook-form"
 import { registerAPI } from "../../apis/AuthAPI"
+import img from "../../assets/Login.png"
+
 
 const Register = () => {
     const navigate = useNavigate()
@@ -45,7 +47,21 @@ const Register = () => {
     })
 
     return (
-        <div className="w-full flex justify-center items-center h-[100vh]" >
+        <div className="flex w-[100%] medium:flex-col " >
+            < div className="w-[50%] h-[100vh] flex flex-col justify-center items-center medium:w-full medium:h-[250px]  "
+                style={{
+                    backgroundImage: `url(${img})`,
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+                }}
+
+            >
+                <div className="text-[40px] font-ath3 " >Start Learnning Today</div>
+                <div>The #1 Platform to Learn</div>
+            </div>
+            <div className="w-[50%] flex justify-center items-center h-[100vh] medium:h-[calc(100vh-250px)] medium:w-full" >
             <form
                 onSubmit={onSubmit}
                 className="flex flex-col justify-center" >
@@ -139,8 +155,8 @@ const Register = () => {
                         <span className="font-bold text-purple-500 hover:cursor-pointer decoration-none " >Please Sign in here</span>
                     </Link>
                 </div>
-            </form>
-
+                </form>
+            </div>
         </div>
     )
 }

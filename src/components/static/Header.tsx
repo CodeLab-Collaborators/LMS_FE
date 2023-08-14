@@ -2,8 +2,8 @@ import { AiOutlineBell, AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import logo from "../../assets/logo.png"
 import img from "../../assets/pi.jpg"
 import { useDispatch, useSelector } from "react-redux"
-import { onToggle, onToggleLeft } from "../../global/globalState"
-import { useEffect, useState } from "react"
+import { onToggleLeft } from "../../global/globalState"
+import { useState } from "react"
 import DropDownProfile from "./DropDownProfile"
 import LeftDropSider from "./LeftDropSider"
 
@@ -15,14 +15,12 @@ const Header = () => {
     const dispatch = useDispatch()
 
     const [state, setState] = useState<boolean>(false)
-    const [stateLeft, setStateLeft] = useState<boolean>(false)
+
 
     const onState = () => {
         setState(!state)
     }
 
-    // w - [${ toggle? "calc(100vw-200px)": "calc(100vw-80px)" }]
-    // w - [${ toggle? "calc(100vw-300px)": "calc(100vw-100px)" }]
 
     console.log("readign: ", toggle)
     return (
