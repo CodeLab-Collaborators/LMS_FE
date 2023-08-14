@@ -10,6 +10,7 @@ import TestScreen2 from "../pages/screen/test/TestScreen2"
 import ErrorImport from "../error/error/ErrorImport"
 import ResponseScreen from "../pages/auth/ResponseScreen"
 import ProfileScreen from "../pages/screen/profile/ProfileScreen"
+import SettingScreen from "../pages/screen/settings/SettingScreen"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -34,6 +35,11 @@ export const mainRoute = createBrowserRouter([
                 index: true,
                 path: "test",
                 element: <TestScreen />
+            },
+            {
+                index: true,
+                path: "setting",
+                element: <SettingScreen />
             },
 
             {

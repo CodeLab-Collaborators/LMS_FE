@@ -10,7 +10,7 @@ import { Provider } from 'react-redux'
 const persistor = persistStore(store)
 const App = () => {
   return (
-    <div>
+    <div >
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <RouterProvider router={mainRoute} />

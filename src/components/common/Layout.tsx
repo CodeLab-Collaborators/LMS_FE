@@ -7,7 +7,6 @@ import { onToggleLeft } from '../../global/globalState'
 const Layout = () => {
     const dispatch = useDispatch()
     const toggle = useSelector((state: any) => state.toggle)
-
     return (
         <div className='font-ath ' >
             {/* <Header /> */}
@@ -19,7 +18,8 @@ const Layout = () => {
                     className='flex flex-col w-full items-end '
                 >
                     <Header />
-                    <div className={`w-[${toggle ? "calc(100vw-200px)" : "calc(100vw-70px)"}] pl-8 medium:w-full medium:pl-0 medium:ml-[0px] duration-300 transition-all  mt-[100px] `}
+
+                    <div className={`w-[${toggle ? "calc(100vw-200px)" : "calc(100vw-80px)"}] pl-8 medium:w-full medium:pl-0 medium:ml-[0px] duration-300 transition-all mt-24`}
 
                         onClick={() => {
                             dispatch(onToggleLeft(true))
