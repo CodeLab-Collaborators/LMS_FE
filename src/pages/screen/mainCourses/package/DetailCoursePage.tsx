@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import pix from "../../../../assets/pi.jpg"
 

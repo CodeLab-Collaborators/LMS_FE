@@ -1,10 +1,9 @@
 import React from 'react'
 import img from "../../assets/pi.jpg"
-import { FaDoorOpen, FaDoorClosed, FaConnectdevelop, FaGraduationCap } from "react-icons/fa"
-import { BsFillPersonFill, BsPersonCircle, BsFillGearFill } from "react-icons/bs"
-import { BiSolidChart, BiSolidInbox } from "react-icons/bi"
-import { MdGroups2 } from "react-icons/md"
-import { GoCommentDiscussion } from "react-icons/go"
+import { FaDoorOpen, FaGraduationCap } from "react-icons/fa"
+import { BsFillPersonFill, BsPersonCircle } from "react-icons/bs"
+import { BiSolidChart } from "react-icons/bi"
+
 import { AiOutlineBell } from "react-icons/ai"
 
 

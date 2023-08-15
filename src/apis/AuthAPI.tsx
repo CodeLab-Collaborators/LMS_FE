@@ -12,7 +12,7 @@ interface iData {
 
 export const registerAPI = async (data: any) => {
     try {
-        const config = {
+        const config: any = {
             "content-type": "multipart/formdata"
         }
         return await axios.post(`${URL}/register`, data, config).then((res: any) => {
