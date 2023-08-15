@@ -11,6 +11,10 @@ import ErrorImport from "../error/error/ErrorImport"
 import ResponseScreen from "../pages/auth/ResponseScreen"
 import ProfileScreen from "../pages/screen/profile/ProfileScreen"
 import SettingScreen from "../pages/screen/settings/SettingScreen"
+import InsideTrack from "../pages/screen/home/InsideTrack"
+import MainCourse from "../pages/screen/mainCourses/MainCourse"
+import CourseBreakDown from "../pages/screen/mainCourses/package/CourseBreakDown"
+import DetailCoursePage from "../pages/screen/mainCourses/package/DetailCoursePage"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -38,8 +42,28 @@ export const mainRoute = createBrowserRouter([
             },
             {
                 index: true,
+                path: "inside",
+                element: <InsideTrack />
+            },
+            {
+                index: true,
+                path: "main-course",
+                element: <MainCourse />
+            },
+            {
+                index: true,
+                path: "course-detail",
+                element: <DetailCoursePage />
+            },
+            {
+                index: true,
                 path: "setting",
                 element: <SettingScreen />
+            },
+            {
+                index: true,
+                path: "course-broke-down",
+                element: <CourseBreakDown />
             },
 
             {

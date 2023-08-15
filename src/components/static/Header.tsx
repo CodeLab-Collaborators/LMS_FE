@@ -15,14 +15,10 @@ const Header = () => {
     const dispatch = useDispatch()
 
     const [state, setState] = useState<boolean>(false)
-
-
     const onState = () => {
         setState(!state)
     }
-
-
-    console.log("readign: ", toggle)
+    // [${toggle ? "calc(100vw-200px)" : "calc(100vw-80px)" }]
     return (
 
         <div className={` w-[${toggle ? "calc(100vw-200px)" : "calc(100vw-80px)" }] flex justify-center fixed  bg-white items-center h-[70px] duration-300 transition-all 
@@ -87,7 +83,8 @@ const Header = () => {
                                 boxShadow: " rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
                             }}
                         >
-                            <DropDownProfile state={state} setState={setState} />
+                            <DropDownProfile state={state} setState={setState}
+                            />
                         </div> : <div className={`
                         absolute top-16 rounded transition-all duration-500 right-[-100%]
                         `}
